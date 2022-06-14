@@ -1,0 +1,72 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+
+local Window = Library.CreateLib("19enaj Hub", "BloodTheme")
+
+
+
+local Tab = Window:NewTab("Universal Hileler")
+local Section = Tab:NewSection("Ban Yeme Oranı %20")
+
+--Hız hilesi
+Section:NewSlider("Hız", "Sonicten Hızlı Koş!", 500, 0, function(s) -- 500 (MaxValue) | 0 (MinValue)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+end)
+
+--Zıplama hilesi
+Section:NewSlider("Zıplama gücü", "ebesinin nikahına kadar zıpla!", 500, 0, function(s) -- 500 (MaxValue) | 0 (MinValue)
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
+end)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+--scriptler 
+local Tab = Window:NewTab("Scriptler")
+local Section = Tab:NewSection("Bakımda")
+
+
+
+
+
+
+
+
+------------------------------------------------------------------
+local Tab = Window:NewTab("Ayarlar")
+local Section = Tab:NewSection("Gui . tuşuyla kapanıp açılıyor ")
+
+
+Section:NewKeybind("Değiştirmeyin!", "Guinizi Açıp Kapayın", Enum.KeyCode.Slash, function()
+	Library:ToggleUI()
+end)
+
+Section:NewColorPicker("(Bakımda)", "Renk", Color3.fromRGB(255,255,255), function(color)
+    print(color)
+    -- Second argument is the default color
+end)
+
+
+
+
+
+
+
+
+-------------------------------------------------------------------------
+local Tab = Window:NewTab("Credits")
+local Section = Tab:NewSection("Yapımcı: 19enaj#6191")
+local Section = Tab:NewSection("Test Edenler:")
