@@ -17,6 +17,17 @@ Section:NewSlider("Zıplama gücü", "ebesinin nikahına kadar zıpla!", 500, 0,
     game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
 end)
 
+--aimbot
+Section:NewToggle("Aimbot / Silent Aim", "Silah oyunlarında kullanmanız önerilir", function(state)
+    if state then
+        print("Toggle On")
+    else
+        print("Toggle Off")
+    end
+end)
+
+
+
 
 
 
@@ -70,3 +81,38 @@ end)
 local Tab = Window:NewTab("Credits")
 local Section = Tab:NewSection("Yapımcı: 19enaj#6191")
 local Section = Tab:NewSection("Test Edenler:")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
